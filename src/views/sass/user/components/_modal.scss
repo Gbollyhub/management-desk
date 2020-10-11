@@ -1,0 +1,927 @@
+.digital-modal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.356);
+    z-index: 9999;
+
+    .digital-modal-div {
+        background-color: white;
+        width: 70%;
+        height: 90vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 50px 40px;
+        overflow-y: scroll;
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        &::-webkit-scrollbar { display: none;}
+
+        /*Hide scrollbar for mozilla */
+        & { overflow: -moz-scrollbars-none; }
+
+        /* Hide scrollbar for IE and Edge */
+        & {-ms-overflow-style: none;}
+
+        @include respond(phone){ width: 90%;   padding:20px; } ;
+        @include respond(tablet){ width: 90%;   padding:20px; } ;
+
+        &-close {
+         position: absolute;
+         top: 38px;
+         left: 35px;
+         cursor: pointer;
+
+         @include respond(phone){ top: 20px;   left:20px; } ;
+         @include respond(tablet){ top: 20px;   left:20px; } ;
+        }
+
+        &-header {
+            font-size: 18px;
+            font-weight:600;
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: .5px solid #dadada;
+            margin-bottom: 30px;
+        }
+
+        &-row {
+
+            &-col-1 {
+             padding: 0 20px;
+
+                &-header {
+                    font-size: 16px;
+                  font-weight: 500;
+                }
+
+                &-form-div {
+                    border: 1px solid #bebebe;
+                    padding: 0;
+                    border-radius: 5px;
+                    &-row-col{
+                        text-align: center;
+                    }
+                }
+
+            }
+
+            &-col-2 {
+
+                &-card{
+                    border: 1px solid #bebebe !important;
+
+                    &-div{
+                    padding: 20px 20px;
+
+                    .order-header{
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                    .order-sub{
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                    }
+                }
+            }
+        }
+
+    }
+
+
+}
+
+.escrow-modal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.356);
+    z-index: 9999;
+
+    .escrow-modal-div {
+        background-color: white;
+        width: 55%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 35px;
+        overflow-y: scroll;
+
+                /* Hide scrollbar for Chrome, Safari and Opera */
+                &::-webkit-scrollbar { display: none;}
+
+                /*Hide scrollbar for mozilla */
+                & { overflow: -moz-scrollbars-none; }
+        
+                /* Hide scrollbar for IE and Edge */
+                & {-ms-overflow-style: none;}
+
+        @include respond(phone){ width: 90%; height: 90vh;  } ;
+        @include respond(tablet){  width: 90%; height: 90vh; } ;
+       
+
+        .escrow-modal-div-top-nav{  
+            border-bottom: 1px solid #dbdbdb;
+        }
+        &-close {
+         position: absolute;
+         top: 60px;
+         right: 35px;
+         transform: all .2s ;
+
+         &:hover{
+            color: #BD161C !important;
+         }
+        }
+
+        &-header {
+            font-size: 30px;
+            font-weight:600;
+        }
+
+        .escrow-product-title{
+            font-size: 23px;
+            font-weight:600;
+            text-emphasis: center;
+        }
+       
+        .escrow-product-header{
+            font-size: 16px;
+            font-weight:600;
+        }
+        .share-text{
+          font-size: 17px;
+          font-weight:600;
+          color: #BD161C;
+        }
+        .share-pack{
+            background-color: #BD161C;
+            border-radius: 20px;
+            display: inline-block;
+        }
+     
+    .escrow-ul{
+ 
+        }
+    .escrow-li{
+    display: inline-block;
+    margin-right: 20px;
+
+        &-p{
+            font-size: 14px;
+          font-weight:600;
+        }
+    }
+    }
+
+
+}
+
+
+.escrow-view-modal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.356);
+    z-index: 9999;
+
+    .escrow-view-modal-div {
+        background-color: white;
+        width: 55%;
+        height: 90vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        // overflow: scroll;
+
+        .chat-area{
+            position: relative;
+           
+        .user-bar{
+            height: 60px;
+            width: 100%;
+            background-color: white;
+            border-bottom: 0.5px solid #e4e4e4;
+            padding: 0 20px;
+            width: 100%;
+            position: fixed;
+         .user-heading{
+             line-height: 60px;
+             .exit-btn{
+                font-size: 26px;
+                transition: all .2s;
+                margin-right: 50px !important;
+                &:hover{
+                    color: #BD161C !important;
+                }
+             }
+             .user-bar-header{
+             font-size: 20px;
+             font-weight: 500;
+             color: #585858;
+            }
+         }
+            
+        }
+
+        .chat-box{
+            padding: 20px;
+
+            .date-line{
+                text-align: center;
+                 margin-bottom: 10px;
+                .date-line-value{
+                    display: inline-block;
+                   background-color: white;
+                   padding: 3px;
+                   color: #d1d1d1;
+                   margin-top: -30px;
+                }
+            }
+            
+            .user-box-div{
+                display: block;
+                position: relative;
+                overflow: hidden;
+                .user-box{
+                    float: right;
+                border-radius: 20px 20px 3px 20px;
+                background-color: #dddddd;
+                padding: 10px 17px;
+                width: 50%;
+                height: auto;             
+                margin-bottom: 20px;
+            }
+            }
+
+            .seller-box-header{
+                font-size: 15px;
+                font-weight: 600;
+                color: #1b1b1b;
+            }
+            .seller-box-listing{
+                font-size: 13px;
+                color: #686868;
+                margin-bottom:10px;
+            }
+           
+            .seller-box-div{
+                display: block;
+                position: relative;
+                overflow: hidden;
+                .seller-box{
+                float: left;
+                border-radius: 20px 20px 20px 3px;
+                background-color:#dddddd;
+                padding: 17px;
+                width: 50%;
+                height: auto;
+                margin-bottom: 20px;
+            }
+            }
+            
+
+            .message-text{
+                color: #3b3b3b;
+            }
+            .user-box-date{
+                text-align: right;
+                color: rgb(149, 149, 149);
+            }
+
+
+        }
+        .chat-field{ 
+            background-color: #efefef;
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          padding: 10px 30px;
+
+          .send-btn{
+             float: right;
+             margin-top: -35px;
+             margin-right: 20px;
+             outline: none !important;
+             transition: all .2s;
+             &:hover{
+                color: #BD161C !important;
+             }
+          }
+        }
+        }
+
+
+    }
+
+}
+
+.invoice-modal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.356);
+    z-index: 9999;
+
+    .invoice-modal-div {
+        background-color: white;
+        width: 80%;
+        height: 90vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow-y: scroll;
+        padding: 50px;
+
+                /* Hide scrollbar for Chrome, Safari and Opera */
+                &::-webkit-scrollbar { display: none;}
+
+                /*Hide scrollbar for mozilla */
+                & { overflow: -moz-scrollbars-none; }
+        
+                /* Hide scrollbar for IE and Edge */
+                & {-ms-overflow-style: none;}
+
+        @include respond(phone){ width: 90%;   padding:20px; } ;
+        @include respond(tablet){ width: 90%;   padding:20px; } ;
+    }
+
+    .top-nav{
+        padding-bottom: 45px;
+        border-bottom: 0.5px solid rgb(241, 241, 241);
+        margin-bottom: 30px;
+    }
+
+    .m-title{
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .m-close{
+        position: absolute;
+        right: 20px;
+        top:20px
+    }
+
+    .m-subtotal{
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .m-total{
+        font-size: 18px;
+        font-weight: 700;
+        background-color: #FCFAFA;
+        padding: 10px;
+    }
+    .m-others
+    {
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+}
+
+.agent-modal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.356);
+    z-index: 9999;
+    
+    .agent-modal-div {
+        background-color: white;
+        width: 80%;
+        height: 90vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow-y: scroll;
+        padding: 50px;
+
+                /* Hide scrollbar for Chrome, Safari and Opera */
+                &::-webkit-scrollbar { display: none;}
+
+                /*Hide scrollbar for mozilla */
+                & { overflow: -moz-scrollbars-none; }
+        
+                /* Hide scrollbar for IE and Edge */
+                & {-ms-overflow-style: none;}
+        @include respond(phone){  padding: 20px;  } ;
+        @include respond(tablet){ padding: 20px;} ;
+        .agent-top-nav{
+            border-bottom: 0.5px solid rgb(241, 241, 241);
+            margin-bottom: 30px;
+            position: relative;
+            .agent-top-nav-left{
+               
+                font-size: 27px;
+                font-weight: 500;
+
+                @include respond(phone){  font-size: 20px; } ;
+                @include respond(tablet){ font-size: 20px;} ;
+            }
+            .agent-top-nav-right{
+                 position: absolute;
+                 right: 30px;
+                 top: 0;
+                 @include respond(phone){  right: 0; top: -5px;} ;
+                @include respond(tablet){ right: 0; top: -5px;}  ;
+            }
+
+            }
+
+            .agent-modal-content{
+
+                .service-item{
+                    padding-bottom: 20px;
+                    margin-bottom: 30px;
+                    border-bottom: 0.5px solid rgb(241, 241, 241);
+
+                }
+               
+                .agent-modal-sub-header{
+                          font-size: 20px;
+                          
+                    @include respond(phone){  font-size: 16px; } ;
+                    @include respond(tablet){ font-size: 16px;} ;
+                }
+                .agent-modal-comission{
+                    color: #BD161C;
+                    font-size: 12px;
+
+                }
+            }
+        }
+
+    }
+
+
+
+
+    .wallet-modal {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.356);
+        z-index: 9999;
+
+        .modal-close{
+            position: absolute;
+            right: 30px;
+            top: 30px;
+            @include respond(phone){  right: 15px;top: 15px;} ;
+           @include respond(tablet){ right: 15px; top: 15px;}  ;
+       }
+        
+        .wallet-modal-div {
+            background-color: white;
+            width: 28%;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 35px;
+             overflow-y: scroll;
+
+                     /* Hide scrollbar for Chrome, Safari and Opera */
+        &::-webkit-scrollbar { display: none;}
+
+        /*Hide scrollbar for mozilla */
+        & { overflow: -moz-scrollbars-none; }
+
+        /* Hide scrollbar for IE and Edge */
+        & {-ms-overflow-style: none;}
+         
+            @include respond(phone){ width: 90%;   padding:20px; } ;
+            @include respond(tablet){ width: 90%;   padding:20px; } ;
+ 
+
+            .top-nav{
+                margin-bottom: 30px;
+
+           .wallet-modal-header{
+               font-size: 18px;
+               font-weight: 500;
+           }
+
+            }
+        .warning-div{
+            text-align: center;
+            padding: 40px 20px;
+
+            .warning-sign{
+             font-size: 80px;
+             margin-bottom: 20px;
+            }
+           .warning-text{
+               font-size: 16px;
+               font-weight: 500;
+               color: rgb(68, 68, 68);
+           }
+        }
+        .wallet-success-div{
+            text-align: center;
+            padding: 40px 20px;
+            .wallet-success-sign{
+             font-size: 80px;
+             margin-bottom: 20px;
+            }
+           .wallet-success-header{
+               font-size: 16px;
+               font-weight: 600;
+               color: rgb(68, 68, 68);
+           }
+           .wallet-success-sub{
+            font-size: 16px;
+            font-weight: 500;
+            color: rgb(68, 68, 68);
+        }
+        }
+
+        .wallet-failed-div{
+            text-align: center;
+            padding: 40px 20px;
+            .wallet-failed-sign{
+             font-size: 80px;
+             margin-bottom: 20px;
+            }
+           .wallet-failed-header{
+               font-size: 16px;
+               font-weight: 600;
+               color: rgb(68, 68, 68);
+           }
+           .wallet-failed-sub{
+            font-size: 16px;
+            font-weight: 500;
+            color: rgb(68, 68, 68);
+        }
+        }
+           
+        }
+
+        }
+
+        .wallet-verification-modal {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.356);
+            z-index: 9999;
+    
+            .modal-close{
+                position: absolute;
+                right: 30px;
+                top: 30px;
+                @include respond(phone){  right: 15px;top: 15px;} ;
+               @include respond(tablet){ right: 15px; top: 15px;}  ;
+           }
+            
+            .wallet-verification-div {
+                background-color: white;
+                width: 40%;
+                height: auto;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                padding: 35px;
+                @include respond(phone){ width: 80%;   padding:20px; } ;
+                @include respond(tablet){ width: 80%;   padding:20px; } ;
+     
+            }
+
+            .wallet-verify-header{
+                font-size: 20px;
+                font-weight: 500;
+            }
+            
+            .wallet-verify-sub{
+                font-size: 13px;
+            }
+ 
+
+        }
+
+
+        .api-modal {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(30, 30, 30, 0.659);
+            z-index: 33;
+           
+    
+            .modal-close{
+                position: absolute;
+                right: 15px;
+                top: 15px;
+                @include respond(phone){  right: 15px;top: 15px;} ;
+               @include respond(tablet){ right: 15px; top: 15px;}  ;
+           }
+            
+            .api-div {
+                position: relative;
+                overflow-wrap: break-word;
+                display: block;
+                background-color: white;
+                width: 40%;
+                height: auto;
+                padding: 35px;
+                word-wrap    : break-word;
+                @include respond(phone){ width: 80%;   padding:20px; } ;
+                @include respond(tablet){ width: 80%;   padding:20px; } ;
+     
+            }
+
+            .api-header{
+                font-size: 23px;
+                font-weight: 600;
+            }
+
+            .wallet-verify-header{
+                font-size: 20px;
+                font-weight: 500;
+            }
+            
+            .wallet-verify-sub{
+                font-size: 13px;
+            }
+ 
+
+        }
+
+
+        .status-modal {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(255, 255, 255);
+            z-index: 9999;
+          
+            
+            .status-div {
+                background-color: white;
+                width: 35%;
+                height: auto;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                padding: 35px;
+                @include respond(phone){ width: 85%;   padding:20px; } ;
+                @include respond(tablet){ width: 85%;   padding:20px; } ;
+     
+        
+
+        }
+
+    }
+
+
+    .receipt-modal{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.356);
+        z-index: 9999;
+
+        .recipt-close{
+            position: absolute;
+            left: 30px;
+            top: 15px;
+            @include respond(phone){  left: 15px;top: 15px;} ;
+           @include respond(tablet){ left: 15px; top: 15px;}  ;
+       }
+        
+        .receipt-div {
+            background-color: white;
+            width: 75%;
+            height: 95%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+           overflow-y: scroll;
+                   /* Hide scrollbar for Chrome, Safari and Opera */
+        &::-webkit-scrollbar { display: none;}
+
+        /*Hide scrollbar for mozilla */
+        & { overflow: -moz-scrollbars-none; }
+
+        /* Hide scrollbar for IE and Edge */
+        & {-ms-overflow-style: none;}
+         
+            @include respond(phone){ width: 90%;  } ;
+            @include respond(tablet){ width: 90%;} ;
+    }
+
+    .receipt-top-bar{
+        background: #BD161C;
+        padding: 15px;
+        text-align: center;
+        color:white;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .receipt-bg{
+        background-image: url('/@/assets/receipt-bg.jpg');
+        height: 100vh;
+        background-size: cover;
+    }
+
+    .receipt-content{
+        padding: 10px;
+
+        @include respond(phone){padding:20px; } ;
+                @include respond(tablet){padding:20px; } ;
+
+        .receipt-sub-bar{
+            background: rgb(245, 245, 245);
+            padding: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #535353;
+        }
+
+        .receipt-info-div{
+            margin-bottom: 20px;
+            padding: 0 0 0 20px;
+
+               .receipt-info{
+            display: inline-block;
+            width: 150px;
+            color: #BD161C;
+            font-weight: 600;
+            font-size: 13px;
+            @include respond(phone){ width: 100px; } ;
+                @include respond(tablet){ width: 100px; } ;
+        }
+        .receipt-text{
+            display:inline-block;
+            color: #535353;
+            font-weight: 600;
+            font-size: 13px;
+        }
+        }
+     
+    }
+
+}
+
+.share-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(30, 30, 30, 0.659);
+    z-index: 99999;
+  
+    
+    .share-div {
+        position: relative;
+        overflow-wrap: break-word;
+        display: block;
+        background-color: white;
+        width: 40%;
+        height: auto;
+        padding: 30px;
+        word-wrap    : break-word;
+        @include respond(phone){ width: 90%;   padding:20px; } ;
+        @include respond(tablet){ width: 90%;   padding:20px; } ;
+}
+
+.share-close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    @include respond(phone){ right: 10px;   top:10px; } ;
+    @include respond(tablet){ right: 10px;   top:10px; } ;
+}
+
+}
+
+
+.order-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(30, 30, 30, 0.659);
+    z-index: 99999;
+
+.order-modal-div {
+    position: relative;
+    overflow-wrap: break-word;
+    display: block;
+    background-color: white;
+    width: 55%;
+    height: 90vh;
+    word-wrap    : break-word;
+     
+    overflow-y: scroll;
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+&::-webkit-scrollbar { display: none;}
+
+/*Hide scrollbar for mozilla */
+& { overflow: -moz-scrollbars-none; }
+
+/* Hide scrollbar for IE and Edge */
+& {-ms-overflow-style: none;}
+
+
+    @include respond(phone){ width: 90%;   padding:20px; } ;
+    @include respond(tablet){ width: 90%;   padding:20px; } ;
+
+
+
+}
+
+}
+
+  .order-top-bar{
+    background: #BD161C;
+    padding: 15px;
+    text-align: center;
+    color:white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.order-close{
+    position: absolute;
+    left: 30px;
+    top: 15px;
+    @include respond(phone){  left: 15px;top: 15px;} ;
+   @include respond(tablet){ left: 15px; top: 15px;}  ;
+}
+
+.order-content{
+    padding: 30px 30px;
+}
+
+.order-content-title{
+    border-bottom: 0.5px solid rgb(241, 241, 241);
+    font-size: 14px;
+    color: #BD161C;
+    padding-bottom: 15px;
+    font-weight: 700;
+}
+
+.order-content-header{
+    font-size: 12px;
+    color: #929292;
+    font-weight: 600;
+}
+
+.order-content-sub{
+    font-size: 12px;
+    color: rgb(146, 146, 146);
+}
+
+.product-modal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.356);
+    z-index: 9999;
+
+    .product-modal-div {
+        background-color: white;
+        width: 30%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        // overflow: scroll;
+        padding: 30px;
+
+    }
+
+}

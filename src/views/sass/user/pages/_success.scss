@@ -1,0 +1,69 @@
+.success-div{
+ padding: 150px 0 30px 0 ;
+ text-align: center;
+ background-image: url('/@/assets/success.jpg');
+ background-size: cover;
+
+ @include respond(phone){  padding: 120px 15px 30px 15px ; } ;
+ @include respond(tablet){ padding: 120px 15px 30px 15px ;} ;
+}
+
+.success-div-2{
+    padding: 30px 0 30px 0 ;
+    text-align: center;   
+    @include respond(phone){  padding: 30px 15px 30px 15px ; } ;
+    @include respond(tablet){ padding: 30px 15px 30px 15px ;} ;
+   }
+.success-icon{
+     color: #74e379 !important;
+     font-size: 100px !important;
+}
+.success-div-header{
+ font-size: 24px;
+ font-weight: 600;
+
+ @include respond(phone){  font-size: 20px; } ;
+ @include respond(tablet){ font-size: 20px;} ;
+}
+.success-div-sub {
+  font-size: 14px;
+  color: #727272;
+  @include respond(phone){  font-size: 14px; } ;
+  @include respond(tablet){ font-size: 14px;} ;
+}
+
+.summary-card{
+    padding: 20px;
+    border: 1px solid #d3d3d3 !important;
+    border-radius: 6px !important;
+}
+
+.summary-div{
+    padding: 50px 100px;
+
+    @include respond(phone){  padding: 30px 20px; } ;
+    @include respond(tablet){ padding: 30px 20px;} ;
+
+}
+.summary-card-col{
+    height: 27px;
+    border-bottom: .5px solid #d3d3d3;
+}
+.summary-card-col-2{
+    padding: 20px 0 !important;
+}
+.summary-card-col-value{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.summary-name{                                                                                                                     
+    font-size: 14px;
+    color: #727272;
+    text-align: justify;
+}
+.summary-content-header{
+    font-size: 20px;
+    font-weight: 600;
+    
+}

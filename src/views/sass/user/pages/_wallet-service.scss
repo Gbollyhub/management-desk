@@ -1,0 +1,97 @@
+.service-section{
+    padding: 80px 100px;
+
+    @include respond(phone){ padding: 80px 20px;} ;
+    @include respond(tablet){ padding: 80px 20px; } ;
+}
+.service-logo{
+    width:35px;
+    text-align: center;
+}
+.logo-text{
+    margin-left: 10px;
+   margin-top: 5px;
+   font-size: 25px;
+   font-weight: 700;
+   transform: translateY(5px);
+}
+.back-btn {
+    color: #BD161C;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+
+    @include respond(phone){ top: 6px;left: 20px; } ;
+    @include respond(tablet){ top: 6px;left: 20px;} ;
+}
+    .service-col-2-card{
+        background: white;
+        margin: 0 auto;;
+        padding: 50px 40px 40px 40px;
+        border-radius: 12px ;
+        box-shadow:   0 7px 12px -8px rgba(0, 0, 0, 0.08) !important;
+        overflow: hidden;
+        width: 450px;
+        position: relative;
+
+        @include respond(phone){ width: 100%; padding: 40px 20px 20px 20px; } ;
+        @include respond(tablet){ width: 100%;padding:40px 20px 20px 20px; } ;
+
+        .service-col-2-card-header{
+            font-size: 20px;
+            font-weight: 600;
+            color: #BD161C;
+        }
+
+        .service-col-2-card-header-absolute{
+            font-size: 16px;
+            font-weight: 600;
+            background-color: #BD161C;
+            position: absolute;
+            right: 0;
+            top: 0;
+            color: white;
+            padding: 7px 7px;
+        }
+
+        .service-col-2-text{
+           font-size: 14px;
+          color: #838383;
+        }
+        .service-col-2-card-total-value{
+            font-size: 18px;
+           font-weight: 700;
+        }
+    }
+
+
+    .wallet-card-1,.wallet-card-2,.wallet-card-3{
+        position: relative;
+        border: 1px solid rgb(243, 243, 243);
+        text-align: center;
+        border-radius: 10px;
+        padding: 10px 10px;
+        cursor: pointer;
+        transition: all .2s;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+
+    }
+
+    .wallet-title
+                {
+                    font-weight: 500;
+                    font-size: 12px;
+                   
+                }
+
+
+                .select-icon{
+                    position: absolute !important;
+                    right: 0;
+                    top: 0;
+                }
+
+    

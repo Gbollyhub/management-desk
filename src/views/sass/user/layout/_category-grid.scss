@@ -1,0 +1,31 @@
+.category-row{
+	@include clearfix;
+    width: 100%;
+	margin: 0 auto;
+
+	@include respond(phone){padding: 30px;} ;
+    @include respond(tablet){padding: 30px;} ;
+}
+
+.category-col-1{
+	width: 20%;
+	float: left;
+	margin-right: 2%;
+
+	@include respond(phone){display: none;} ;
+    @include respond(tablet){display: none;} ;
+}
+
+.category-col-2{
+	width: 78%;
+	float: left;
+	@include respond(phone){width: 100%;} ;
+    @include respond(tablet){width: 100%; } ;
+}
+
+.category-break{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+}

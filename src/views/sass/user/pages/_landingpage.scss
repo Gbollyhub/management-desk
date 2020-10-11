@@ -1,0 +1,98 @@
+.Omni-toolbar-section{
+ position: relative;
+}
+
+.sub-nav{
+    background-color: rgb(255, 160, 160);
+    padding: 10px 20px;
+    z-index: 997;
+    position: fixed;
+    width: 100%;
+}
+.banner-section {
+    /* background-image: linear-gradient(
+        to right bottom,
+        rgba(black, 0.5),
+         rgba(black, 0.5)
+     );*/
+
+    background-size: cover;
+    background-position: left;
+    backface-visibility: hidden;
+    height:95vh;
+    position: relative;
+
+    @include respond(phone){height:auto; } ;
+    @include respond(tablet){height:auto; } ;
+}
+
+.dark-overlay{
+    background-color: rgba(17, 17, 17, 0.39);
+    width: 100%;
+    height: 100%;
+    padding: 200px 130px 0px 130px;
+
+    @include respond(phone){padding: 100px 30px 30px 30px; } ;
+    @include respond(tablet){padding: 100px 30px 30px 30px; } ;
+}
+
+.instant-bills-card-form{
+    padding: 30px 30px;
+    height: 150px;
+    @include respond(phone){ height: auto;padding: 20px 20px; } ;
+    @include respond(tablet){ height: auto;padding: 20px 20px; } ;
+}
+.instant-bills-card-form2{
+    padding: 20px 20px;
+    height: auto;
+    @include respond(phone){ height: auto;padding: 20px 20px; } ;
+    @include respond(tablet){ height: auto;padding: 20px 20px; } ;
+}
+
+.instant-bills-card-icon{
+    padding: 20px 20px;
+    height:150px;
+
+    @include respond(phone){ padding: 20px 0; height: 150px; } ;
+    @include respond(tablet){ padding: 20px 0;  height: 150px; } ;
+}
+
+.omni-vector {
+    width: 500px;
+}
+
+.omni-section {
+  background-color: #fafafa;
+  padding: 0 80px;
+
+  @include respond(phone){ padding: 0 20px; } ;
+  @include respond(tablet){ padding: 0 20px; } ;
+}
+
+.marketplace-section {
+    background-color: #fafafa;
+    padding: 50px 0 50px 0;
+}
+
+
+
+.testimonial-section{
+    padding: 50px 80px 100px 80px;
+    background-color:rgb(255, 255, 255);
+
+    @include respond(phone){ padding: 50px 20px 50px 20px; } ;
+        @include respond(tablet){ padding:50px 20px 50px 20px; } ;
+}
+
+.info-arrow {
+ position: absolute;
+ bottom: 2%;
+ left: 50%;
+  transform: translate(-50%, -50%);
+  animation: arrow 1s infinite;
+}
+
+.arrow {
+
+}
+

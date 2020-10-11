@@ -1,0 +1,28 @@
+.instantbills-icon-row {
+    @include clearfix;
+    max-width: 100%;
+    margin: 0 auto;
+
+    // &:not(:last-child){
+    //     margin-bottom: 30px;
+    // }
+
+    // [class^="instantbills-col-"] {
+    //     float:left;
+     
+    //     &:not(:last-child){
+    //         margin-right: 2%;
+    //         @include respond(phone){ margin-right: 0 } ;
+    //     @include respond(tablet){ margin-right: 0 } ;
+    //     }
+    // }
+
+    .instantbills-col-1{
+        float: left;
+        width: calc( 100% / 8);
+        margin-bottom: 30px;
+        @include respond(phone){ width: 33.3%; } ;
+        @include respond(tablet){ width: 33.3%; } ;
+    }
+
+}

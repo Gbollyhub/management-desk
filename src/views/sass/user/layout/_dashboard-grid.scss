@@ -1,0 +1,27 @@
+.dashboard-row {
+    @include clearfix;
+    width: 100%;
+    margin: 0 auto;
+
+    .dashboard-col-1{
+        background-color: #232323;
+        width: 20%;
+        float: left;
+        height: 100vh;
+        position: fixed;
+        padding: 30px 30px;
+        @include respond(phone){ display: none; } ;
+        @include respond(tablet){ display: none;  } ;
+
+
+    }
+    .dashboard-col-2{
+        position: relative;
+        background-color: white;
+        width: 80%;
+        float: right;
+        height: auto;
+        @include respond(phone){ width:100%; float: none; display: block;  } ;
+        @include respond(tablet){  width:100%; float: none; display: block;  } ;
+    }
+}

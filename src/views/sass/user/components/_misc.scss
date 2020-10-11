@@ -1,0 +1,179 @@
+
+.brand-logo {
+    height: 70px;
+}
+
+.brand-logo2 {
+    height: 35px;
+    display: none;
+    margin-bottom: 0;
+    @include respond(phone){ display: block;margin-bottom: 25px; } ;
+    @include respond(tablet){ display: block;margin-bottom: 25px; } ;
+}
+
+.overlay {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+
+    &__content{
+     opacity: .1;
+     height: 900px;
+     margin-bottom: -77%;
+     margin-right: -20rem;
+    }
+}
+
+.dots1 {
+    height: 15px;
+    width:15px;
+    border-radius:50%;
+    display: inline-block;
+    background-color: $color-circles;
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    animation: movecircle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    z-index: 1;
+}
+.dots2 {
+    height: 10px;
+    width:10px;
+    border-radius:50%;
+    display: inline-block;
+    background-color: $color-circles;
+    position: absolute;
+    top:68%;
+    left: 35%;
+    animation: movecircle2;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    z-index: 1;
+}
+.dots3 {
+    height: 7px;
+    width:7px;
+    border-radius:50%;
+    display: inline-block;
+    background-color: $color-circles;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    animation: movecircle3;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    z-index: 1;
+}
+
+.dots4 {
+    height: 7px;
+    width:7px;
+    border-radius:50%;
+    display: inline-block;
+    background-color: $color-circles;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    animation: movecircle4;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    z-index: 1;
+}
+
+.dots5 {
+    height: 7px;
+    width:7px;
+    border-radius:50%;
+    display: inline-block;
+    background-color: $color-circles;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    animation: movecircle5;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    z-index: 1;
+}
+
+.dots6 {
+    height: 15px;
+    width:15px;
+    border-radius:50%;
+    display: inline-block;
+    background-color: $color-circles;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    animation: movecircle6;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    z-index: 1;
+}
+
+.eye-icon-open {
+  font-size: 15px;
+  color: #e76b6b;
+  float: right;
+  position: relative;
+  margin-top: -12px;
+  margin-right: -12px;
+}
+
+.eye-icon-close {
+    font-size: 15px;
+    color: #e76b6b;
+    float: right;
+    position: relative;
+  }
+
+  .instant-tab {
+      &:active,
+      &:visited,
+      &:focus{
+          background-color: red;
+      }
+  }
+
+
+  .empty-cart{
+    text-align: center;
+    margin-top:50px
+}
+
+.empty-cart-icon{
+    font-size:150px !important;
+    color: #dddddd !important;
+    margin-bottom: 15px;
+  
+}
+.empty-cart-text{
+    font-size: 18px;
+    font-weight: 500px;
+     color: #dddddd;
+   
+}
+
+.checkbox-style{
+  position: relative;
+}
+
+.event-style{
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    cursor: pointer;
+}

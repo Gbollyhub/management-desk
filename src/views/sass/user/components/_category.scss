@@ -1,0 +1,25 @@
+
+.category-box {
+ padding: 10px;
+}
+.category-name
+ {
+ width: 120px;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ text-decoration: none;
+}
+
+.category-img {
+ width: 80%;
+}
+
+.category-card{
+    border-radius: 10px;
+    text-align: center;
+}
+.category-img-pack{
+    width: 100%;
+     text-align: center;
+   }

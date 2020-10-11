@@ -1,0 +1,105 @@
+
+.manage-product-div{
+    padding: 76px 65px 30px 65px;
+
+    @include respond(phone){ padding: 76px 20px 30px 20px;} ;
+    @include respond(tablet){ font-size: 76px 20px 30px 20px; } ;
+    .manage-product-tab {
+        font-weight: 600px;
+        letter-spacing: 0;
+        font-size: 16px;
+    }
+    .manage-product-tab-card{
+        padding: 0 0 30px 0;
+        @include respond(phone){ padding: 30px 0 30px 0;} ;
+            @include respond(tablet){ padding: 30px 0 30px 0; } ;
+
+
+        .manage-product-card {
+            padding: 0;
+            border-radius: 8px !important;
+            height: 76px;
+            background-color: rgb(255, 255, 255) !important;
+            border: 1px solid rgb(236, 236, 236);
+            overflow: hidden;
+
+            @include respond(phone){  height: 120px;} ;
+            @include respond(tablet){  height: 120px; } ;
+            .manage-product-card-row {
+            height: 76px;
+            padding: 0;
+            @include respond(phone){  height: 120px;} ;
+            @include respond(tablet){  height: 120px; } ;
+
+            .manage-product-card-col-1 {
+                  height: 76px;
+                  @include respond(phone){  height: auto;} ;
+                  @include respond(tablet){  height: auto; } ;
+                .manage-product-card-col-1-div {
+                 width: 100%;
+                 height: 100%;
+                 background-size: cover;
+                 background-position: center;
+                 overflow: hidden;
+                }
+            }
+        
+            .manage-product-card-col-2 {
+                height: 76px;
+                padding: 10px 40px;
+                @include respond(phone){  height: 120px; padding: 15px 20px; overflow-y: scroll;overflow-x: hidden;} ;
+                @include respond(tablet){  height: 120px; padding: 15px 20px;overflow-y: scroll;overflow-x: hidden; } ;
+
+               .manage-product-card-sub-row-1{
+                   margin-bottom: 5px;
+                   
+                .manage-product-card-col-2-sub-col{
+                   height: 10px;
+                .manage-product-details{
+                    font-size: 12px;
+                    color: rgb(148, 148, 148);
+                    width: 80%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .product-name{
+                    font-size: 15px; 
+                    font-weight: 600;
+                    display: block;
+                    width: 90%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+    
+                }
+                .manage-product-card-col-2-sub-col-value{
+                    height: 25px;
+                 .manage-product-details-value{
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: #3b3b3b;
+                 }
+     
+                 }
+        
+                .cart-actions{
+                  
+                padding: 0 !important;
+                }
+               }
+               
+             }
+           
+            }
+        }
+    }
+}
+
+.date-overlay-card{
+    width: 500px;
+    padding: 30px;
+    background-color: rgb(77, 77, 77);
+    border-radius: 5px;
+}

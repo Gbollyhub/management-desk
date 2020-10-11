@@ -1,0 +1,22 @@
+.digitaldetails-row {
+    @include clearfix;
+    max-width: 100%;
+    margin: 0 auto;
+
+    // &:not(:last-child){
+    //     margin-bottom: $gutter-v;
+    // }
+
+
+
+    .digitaldetails-col-1{
+        float: left;
+        width:49%;
+        margin-right: 2%;
+    }
+    .digitaldetails-col-2{
+        float: left;
+        width:49%;
+       
+    }
+}

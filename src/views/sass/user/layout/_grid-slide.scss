@@ -1,0 +1,65 @@
+.slide-row {
+    @include clearfix;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 500px;
+    @include respond(phone){ height: auto; } ;
+    @include respond(tablet){ height: auto; } ;
+ 
+    [class^="col-"] {
+        float:left;
+     
+        &:not(:last-child){
+            margin-right: $gutter-h;
+            @include respond(phone){ margin-right: 0 } ;
+        @include respond(tablet){ margin-right: 0 } ;
+        }
+    }
+
+    
+    .col-2-of-3 {
+        width: calc( 2 * ((100% - 2 * #{$gutter-h}) / 3) + #{$gutter-h} );
+        display: block;
+        height: 500px;
+        margin: 0;
+        @include respond(phone){ height: 300px; width: 100%; margin-bottom: 30px; } ;
+        @include respond(tablet){ height: 300px; width: 100%; margin-bottom: 30px;} ;
+    }
+
+    .col-1-of-3 {
+        width: calc( (100% - 2 * #{$gutter-h}) / 3 );
+        display: block;
+        height: 500px;
+        position: relative;
+        @include respond(phone){ width: 100%; } ;
+        @include respond(tablet){ width: 100%;} ;
+    }
+
+    [class^="market-place-ad"] {
+       
+        &:not(:last-child){
+            margin-bottom: $gutter-h;
+        }
+    }
+    .market-place-ad-1{   
+        background-size: cover;
+        background-position: center;
+        backface-visibility: hidden;
+        height: calc( (100% - #{$gutter-h}) / 2 );
+    }
+    // .spacer{
+    //     display: block;
+    //     content:"";
+    //     width: 100%;
+    //     height: $gutter-h;
+    // }
+    .market-place-ad-2{   
+        background-size: cover;
+        background-position: center;
+        backface-visibility: hidden;
+        height: calc( (100% - #{$gutter-h}) / 2 );
+    }
+
+} 
+
+

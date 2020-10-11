@@ -1,0 +1,59 @@
+.loan-card {
+    border-radius: 10px !important;
+    outline: none;
+    background: #FCFAFA !important;
+    height: 100px !important;
+    width:100% !important;
+     
+    @include respond(phone){ height: 100% !important; width: 100%  !important;} ;
+    @include respond(tablet){ height: 100% !important; width: 100%  !important; } ;
+
+    .loan-row {
+     height: 100%;
+     @include clearfix;
+     width: 100%;
+     margin: 0 auto;
+     color: rgb(47, 47, 47);
+     padding: 20px 10px;
+     
+        .loan-col-1 { 
+         float: left;
+         width: 30%;
+         padding: 0 10px;
+            .icon-div{
+          text-align: center;
+         height: 60px;
+         background:#F8E3E4;
+         border-radius: 50%;
+         width: 60px;
+            }
+        
+        
+        
+         
+
+         .loan-icon{
+             font-size: 30px;
+             line-height: 60px;
+         }
+        }
+
+        .loan-col-2 {
+            padding: 5px 0 5px 20px;
+            float: left;
+            width: 70%;
+            line-height: 20px;
+            .loan-title{
+             font-size: 14px;
+             font-weight: 500;
+             letter-spacing: 1px;
+            }
+            .loan-value {
+                font-size: 18px;
+                font-weight: lighter;
+                letter-spacing: 1px;
+            }
+        }
+        
+    }
+}

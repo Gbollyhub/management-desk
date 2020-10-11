@@ -1,0 +1,415 @@
+.form {
+    position: relative;
+    z-index: 20;
+   
+    &__group{
+        height: auto;
+      margin-bottom: 10px;
+
+    &--control {
+     width: 100%;  
+     padding: 20px;
+     font-size: 15px;
+     font-weight: 700;
+     letter-spacing: 1px;
+     transition: all .2s;
+     &:focus {
+       outline: 1px solid $color-primary;
+     }
+
+    }  
+
+    }
+   
+}
+
+.field-icon {
+  float: right;
+  margin-left: -25px;
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+}
+
+.dyMerchantForm{
+  position: relative;
+  z-index: 999;
+}
+
+/* label color */
+.input-field label {
+  color: rgb(63, 122, 177);
+}
+/* label focus color */
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field input[type=password]:focus + label{
+  color: #222222 !important;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=password]:focus {
+  border-bottom: 1px solid #222222 !important;
+  box-shadow: 0 1px 0 0 #222222 !important
+}
+/* valid color */
+.input-field input[type=text].valid,
+.input-field input[type=email].valid,
+.input-field input[type=password].valid {
+  border-bottom: 1px solid #9ae271 !important;
+  box-shadow: 0 1px 0 0 #9ae271 !important
+}
+/* invalid color */
+.input-field input[type=text].invalid,
+.input-field input[type=email].invalid,
+.input-field input[type=password].invalid {
+  border-bottom: 1px solid #1c1c1c !important;
+  box-shadow: 0 1px 0 0 #1c1c1c !important
+}
+
+.d-form,
+.d-form:active{
+  outline: none !important;
+  border: 1px solid #1c1c1c;
+}
+
+.b-input:focus,
+.b-input.form-control:focus
+ {
+  box-shadow:none;
+  border: 1px solid #1c1c1c;
+  outline: none !important;
+}
+
+.app-text-field {
+  height: 50px;
+  width: 100%;  
+  padding: 10px;
+  font-size: 15px;
+  transition: all .2s;
+  border-radius: 5px;
+  border: 1px solid #acacac;
+
+  &:hover{
+    border: 1px solid #464646;
+  }
+  &:focus {
+    border: 1.5px solid #1c1c1c;
+    outline: none;
+  }
+
+ } 
+ 
+ .app-text-field-small {
+  height: 30px;
+  width: 100%;  
+  padding: 10px;
+  font-size: 15px;
+  transition: all .2s;
+  border-radius: 5px;
+  border: 1px solid #acacac;
+
+  &:hover{
+    border: 1px solid #464646;
+  }
+  &:focus {
+    border: 1.5px solid #1c1c1c;
+    outline: none;
+  }
+
+ } 
+
+ .app-textarea{
+  width: 100%;  
+  padding: 10px;
+  font-size: 15px;
+  transition: all .2s;
+  border-radius: 5px;
+  border: 1px solid #acacac;
+
+  &:hover{
+    border: 1px solid #464646;
+  }
+  &:focus {
+    outline: none;
+  }
+ }
+
+ .select-input{
+   min-height: 50px !important;
+   max-height: 60px !important;
+ }
+
+ .app-chat-text-field{
+  width: 100%;  
+  padding: 10px 20px;
+  font-size: 15px;
+  transition: all .2s;
+  border-radius: 20px;
+  border: 0.5px solid #d6d6d6;
+  background-color: white;
+ }
+
+ .invoice-text-field-small{ 
+   width: 100px;
+  padding: 10px;
+  font-size: 15px;
+  transition: all .2s;
+  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+  display: inline-block;
+  
+  &:hover{
+    border: 1px solid #464646;
+  }
+  &:focus {
+    border: 1.5px solid #1c1c1c;
+    outline: none;
+  }
+ }
+
+ .invoice-text-field-medium{ 
+  padding: 10px;
+  font-size: 15px;
+  transition: all .2s;
+  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+  display: inline-block;
+  margin-bottom: 10px;
+  
+  &:hover{
+    border: 1px solid #464646;
+  }
+
+  &:focus {
+    border: 1.5px solid #1c1c1c;
+    outline: none;
+  }
+ }
+
+ .invoice-text-field-table{ 
+   font-weight: 400;
+  padding: 10px;
+  font-size: 12px;
+  transition: all .2s;
+  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+  width: 100%;
+  &:hover{
+    border: 1px solid #464646;
+  }
+
+  &:focus {
+    border: 1.5px solid #1c1c1c;
+    outline: none;
+  }
+  
+ }
+
+ .invoice-text-field-table-bg{ 
+  font-weight: 400;
+ padding: 10px;
+ font-size: 12px;
+ transition: all .2s;
+ border-radius: 5px;
+ border: 1px solid #dbdbdb;
+ width: 100%;
+ &:hover{
+   border: 1px solid #464646;
+ }
+
+ &:focus {
+   border: 1.5px solid #1c1c1c;
+   outline: none;
+ }
+}
+
+.invoice-text-field-footer{ 
+ padding: 10px;
+ font-size: 15px;
+ transition: all .2s;
+ border-radius: 5px;
+ border: 1px solid #dbdbdb;
+ display: inline-block;
+ 
+ &:hover{
+   border: 1px solid #464646;
+ }
+ &:focus {
+   border: 1.5px solid #1c1c1c;
+   outline: none;
+ }
+}
+
+.invoice-note-title{
+  width: 150px;
+  padding: 10px;
+  font-size: 15px;
+  transition: all .2s;
+  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+  display: inline-block;
+  
+  &:hover{
+    border: 1px solid #464646;
+  }
+  &:focus {
+    border: 1.5px solid #1c1c1c;
+    outline: none;
+  }
+
+}
+
+.invoice-note-value{
+  width: 100%;  
+  padding: 10px;
+  font-size: 15px;
+  transition: all .2s;
+  border-radius: 5px;
+  border: 1px solid #acacac;
+
+  &:hover{
+    border: 1px solid #464646;
+  }
+  &:focus {
+    outline: none;
+    border: 1.5px solid #1c1c1c;
+  }
+ }
+
+
+ .form-field-control{
+   padding-left: 10px !important;
+   padding-right: 10px !important;
+ }
+
+ input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+ .wallet-text-field {
+  height: 40px;
+  width: 100%;  
+  padding: 10px;
+  font-size: 15px;
+  transition: all .2s;
+  border-radius: 5px;
+  border: 1px solid #c7c7c7;
+  margin-bottom: 30px;
+  &:hover{
+    border: 1px solid #464646;
+  }
+  &:focus {
+    border: 1.5px solid #1c1c1c;
+    outline: none;
+  }
+
+}
+
+.wallet-text-field-diff {
+  height: 40px;
+  width: 100%;  
+  padding: 10px;
+  font-size: 15px;
+  transition: all .2s;
+  border-radius: 5px;
+  border: 1px solid #c7c7c7;
+  &:hover{
+    border: 1px solid #464646;
+  }
+  &:focus {
+    border: 1.5px solid #1c1c1c;
+    outline: none;
+  }
+
+}
+
+.digital-text-field {
+  height: 40px;
+  width: 100%;  
+  padding: 10px;
+  font-size: 15px;
+  transition: all .2s;
+  border-radius: 5px;
+  border: 1px solid #c7c7c7;
+  margin-bottom: 30px;
+  &:hover{
+    border: 1px solid #464646;
+  }
+  &:focus {
+    border: 1.5px solid #1c1c1c;
+    outline: none;
+  }
+
+}
+
+.wallet-text-field-pin {
+  height: 40px;
+  width: 100%;  
+  padding: 10px;
+  font-size: 15px;
+  transition: all .2s;
+  border-radius: 5px;
+  border: 1px solid #c7c7c7;
+  margin-bottom: 10px;
+  &:hover{
+    border: 1px solid #464646;
+  }
+  &:focus {
+    border: 1.5px solid #1c1c1c;
+    outline: none;
+  }
+}
+
+.app-text-field-range {
+  height: 35px;
+  width: 43%;  
+  padding: 10px;
+  font-size: 15px;
+  transition: all .2s;
+  border-radius: 5px;
+  border: 1px solid #acacac;
+
+  &:hover{
+    border: 1px solid #464646;
+  }
+  &:focus {
+    border: 1.5px solid #1c1c1c;
+    outline: none;
+  }
+
+ } 
+
+
+ .no-border-field{
+   text-align: center;
+   font-weight: 600;
+  width: 100%;  
+  font-size: 40px;
+  transition: all .2s;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+  color: #F6AD34;
+  &:focus {
+    border: none;
+    outline: none;
+  }
+  &:focus::placeholder {
+    color: transparent;
+  }
+  &::-webkit-input-placeholder { /* Edge */
+    color: #F6AD34;
+  }
+  
+  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #F6AD34;
+  }
+  
+  &::placeholder {
+    color: #F6AD34;
+  }
+}

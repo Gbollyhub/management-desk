@@ -1,0 +1,53 @@
+.api-section {
+    background-color: rgb(236, 244, 255);
+    height: 500px;
+
+    @include respond(phone){ height: auto; } ;
+        @include respond(tablet){ height: auto; } ;
+}
+
+
+
+.api-row {
+    @include clearfix;
+    max-width: 100%;
+    margin: 0 auto;
+
+    // &:not(:last-child){
+    //     margin-bottom: $gutter-v;
+    // }
+}
+
+.api-col-1{
+    float: left;
+    width:50%;
+    height: 500px;
+    position: relative;
+    padding: 60px 40px 0 40px;
+    @include respond(phone){ width: 100%; height: auto; } ;
+    @include respond(tablet){ width: 100%; height: auto; } ;
+}
+.api-vector {
+    width: 550px;
+    margin: 0 auto;
+  }
+  
+  .api-image-wrapper{
+ 
+  }
+.api-col-2{
+    float: left;
+    width:50%;
+    height: 500px;
+    @include respond(phone){ width: 100%; height: auto; } ;
+    @include respond(tablet){ width: 100%; height: auto; } ;
+}
+
+.api-col-2-div{
+    height: 100%;
+    width: 100%;
+    padding: 30px !important;
+}
+
+
+

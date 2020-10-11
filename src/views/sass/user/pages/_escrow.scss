@@ -1,0 +1,221 @@
+.Omni-toolbar-section2{
+    position: relative;
+   }
+
+   .escrow-details-content{
+       padding: 100px 0;
+       .bread-crumbs{
+           padding: 0 100px;
+           @include respond(phone){ padding: 0 20px; } ;
+           @include respond(tablet){ padding: 0 20px; } ;
+
+           .bread-crumbs p{
+        font-size: 15px;
+        font-weight: 600;
+        border-bottom: 2px solid #dadada;
+
+        @include respond(phone){ font-size: 12px; } ;
+        @include respond(tablet){ font-size: 12px; } ;
+    }
+
+    .bread-crumbs-p a{
+        font-size: 15px;
+        font-weight: 600;
+    
+        @include respond(phone){ font-size: 12px; } ;
+        @include respond(tablet){ font-size: 12px; } ;
+        
+    }
+       }
+       
+
+      .escrow-details-content-div{
+        padding: 0 100px;
+
+        @include respond(phone){ padding: 0 10px; } ;
+        @include respond(tablet){ padding: 0 10px; } ;
+
+       .escrow-row-1{
+        border: 2px solid #e3e3e9;
+        padding: 30px;
+        background-color: white;
+        @include clearfix;
+        max-width: 100%;
+        margin: 0 auto;
+
+        @include respond(phone){ padding: 10px; } ;
+        @include respond(tablet){ padding: 10px; } ;
+
+        .escrow-row-1-col-1{
+            float: left;
+            width: 48%;
+            margin-right: 4%;
+
+            @include respond(phone){ width: 100%; margin-right: 0;} ;
+        @include respond(tablet){ width: 100%; margin-right: 0;} ;
+        }
+
+      .escrow-row-1-col-2{
+         position: relative;
+         padding: 0 70px ;
+         float: left;
+         width: 48%;
+
+         @include respond(phone){ width: 100%; padding: 0; } ;
+         @include respond(tablet){ width: 100%; padding: 0;} ;
+ 
+
+         .escrow-row-1-col-2-escrow-name{
+              font-weight: 700;
+          }
+        .escrow-row-1-col-2-escrow-company{
+            font-size: 15px;
+            font-weight: 600;
+            color: #BD161C;
+        }
+      .escrow-row-1-col-2-escrow-div{
+        line-height: 15px;
+      }
+     .escrow-row-1-col-2-escrow-rated-by{
+        font-size: 13px;
+        font-weight: 600;
+        color: #aaaaaa;
+     }
+     .escrow-row-1-col-2-escrow-discount{
+        font-size: 13px;
+        font-weight: 600;
+        color: #aaaaaa;
+        margin-left:10px;
+     }
+     .escrow-row-1-col-2-escrow-price{
+            color: #BD161C;
+            font-size: 25px;
+            font-weight: bold;
+     }
+      }
+    }
+       .escrow-row-2{
+        @include clearfix;
+        max-width: 100%;
+        margin: 0 auto;
+        
+        .escrow-row-2-col-1{
+            border: 2px solid #e3e3e9;
+            padding: 20px 30px;
+            background-color: white;
+            float: left;
+            width: 61%;
+            margin-right: 4%;
+
+            @include respond(phone){ width: 100%; margin-right: 0; padding: 20px 20px;margin-bottom: 30px;} ;
+            @include respond(tablet){ width: 100%; margin-right: 0; padding: 20px 20px;margin-bottom: 30px;} ;
+
+        .escrow-row-2-header{
+            font-size: 20px;
+            font-weight: 600;
+            color: #1b1b1b;
+        }
+        .escrow-row-2-text{
+            text-align: justify;
+            font-size: 14px;
+            color: rgb(104, 104, 104);
+        }
+        .escrow-product-listing{
+            font-size: 15px;
+            color: #686868;
+            margin-bottom:10px;
+        }
+        }
+        .escrow-row-2-col-2{
+            float: left;
+            width: 35%;
+
+            @include respond(phone){ width: 100%;  padding: 0;} ;
+            @include respond(tablet){ width: 100%; padding: 0;} ;
+
+            .escrow-row-2-col-2-col-1{
+             border: 2px solid #e3e3e9;
+            padding: 20px 30px;
+            background-color: white;
+            width: 100%;
+          
+
+            @include respond(phone){ width: 100%;  padding: 20px 20px;} ;
+            @include respond(tablet){ width: 100%; padding: 20px 20px;} ;
+
+            
+            .escrow-row-2-header{
+                font-size: 20px;
+                font-weight: 600;
+                color: #1b1b1b;
+            }
+            .escrow-row-2-company{
+                font-size: 18px;
+                font-weight: 600;
+                color: #BD161C;
+                text-transform: capitalize;
+            }
+            .escrow-row-2-location{
+                font-size: 15px;
+                font-weight: 600;
+                color: #686868;
+                text-transform: capitalize;
+            }
+            }
+            .escrow-row-2-col-2-col-2{
+                          border: 2px solid #e3e3e9;
+                           padding: 20px 30px;
+                           background-color: white;
+                           .escrow-row-2-header{
+                               font-size: 20px;
+                               font-weight: 600;
+                               color: 
+                               #1b1b1b;
+                           }
+                           .escrow-row-2-company{
+                               font-size: 18px;
+                               font-weight: 600;
+                               color: #BD161C;
+                               text-transform: capitalize;
+                           }
+                           .escrow-row-2-location{
+                               font-size: 15px;
+                               font-weight: 600;
+                               color: #686868;
+                               text-transform: capitalize;
+                           }
+                           }
+           
+        }
+       
+    }
+      }
+  
+   }
+
+   .related-escrow{
+       width: 100%;
+       display: block;
+       padding: 0 100px;
+
+       @include respond(phone){ padding: 0px 20px;} ;
+       @include respond(tablet){  padding: 0px 20px;} ;
+      .related-escrow-p{
+       font-size: 25px;
+       font-weight: 700;
+       color: #1b1b1b;
+   } 
+   }
+   
+   .related-escrow-slide-group{
+       padding: 0 20px;
+
+       @include respond(phone){ padding: 0} ;
+       @include respond(tablet){  padding: 0} ;
+   }
+
+   .wish-icon-btn{
+       position: absolute !important;
+       right: 0;
+       top:0;
+   }

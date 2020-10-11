@@ -1,0 +1,290 @@
+
+
+.Omni-toolbar__links:hover {
+    color: #BD161C;
+  }
+  .heading{
+      color: white;
+      margin-top: 30%;
+    padding: 0 30px 0 30px;
+      &__banner-header-text{
+       line-height: 60px;
+       font-size: $banner-header-text-size;
+       font-weight: 600;
+  
+      }
+  
+      &__banner-sub-text{
+          font-size: $banner-sub-text-size;
+          font-weight:400;
+          margin-bottom: 70px;
+      }
+  }
+  
+  .brand-url {
+      color: white;
+      position: absolute;
+      padding: 0 30px;
+      bottom:0;
+      left:200;
+      font-size: $banner-sub-text-size;
+      font-weight:400;
+      margin-bottom: 50px;
+      letter-spacing: 6px;
+  }
+  
+  .Form-heading {
+      position: relative;
+      z-index: 20;
+  }
+  
+  .header-text{
+    color: rgb(58, 58, 58);
+   font-size: 30px;
+   font-weight: bold;
+   @include respond(phone){  font-size: 25px; } ;
+   @include respond(tablet){  font-size: 25px; } ;
+  }
+  
+  .sub-text{
+    color: #7e7e7e;
+  font-size: 18px;
+  font-weight:500;
+  @include respond(phone){  font-size: 15px; } ;
+  @include respond(tablet){  font-size: 15px; } ;
+  }
+  
+  .forgot-password{
+    &:link,
+    &:visited{
+      color: #e76b6b;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-decoration: none;
+      transition: all .2s;
+      display: inline-block;
+      position: relative;
+      z-index: 999;
+      &:hover {
+          text-decoration: underline !important;
+      }
+  }
+  }
+  
+  
+  .new-user{
+   &:link,
+   &:visited{
+      display: inline-block;
+      color: #e76b6b;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-decoration: none;
+      transition: all .2s;
+      position: relative;
+      z-index: 999;
+      &:hover {
+          text-decoration: underline !important;
+      }
+  }
+  }
+  
+  .banner-heading {
+      text-align: center;
+      color: white;
+      margin-bottom: 20px;
+      &__header {
+          font-weight: 600;
+          font-size: 40px;
+          @include respond(phone){ font-size:30px; } ;
+          @include respond(tablet){ font-size: 30px;} ;
+      }
+      &__sub {
+         font-size: 18px;
+         @include respond(phone){ font-size: 15px; } ;
+         @include respond(tablet){ font-size: 15px; } ;
+      }
+  }
+  
+  .omni-heading{
+       margin-bottom: 30px;
+      &__header {
+          font-weight: bold;
+          font-size: 40px;
+          color: #BD161C;
+      }
+      &__sub {
+          font-size: 18px;
+          color: #ad9797;
+      }
+  }
+  
+  .marketplace-heading{
+  
+      padding: 0 5%;
+      &__header {
+        font-weight: bold;
+        font-size: 30px;
+        color:#BD161C;
+
+        @include respond(phone){ font-size: 25px; } ;
+        @include respond(tablet){ font-size: 25px; } ;
+    }
+  
+      &__sub{
+          letter-spacing: 2px;
+          font-weight: 600;
+      color: #2c2c2c;
+      font-size: 18px;
+      }
+    
+  }
+  
+  .category-name{
+      font-size: 14px;
+      font-weight: 500;
+  }
+  
+  .api-heading{
+      margin-bottom: 30px;
+     &__header {
+         font-weight: bold;
+         font-size: 30px;
+         color:#BD161C;
+
+         @include respond(phone){ font-size: 25px; } ;
+         @include respond(tablet){ font-size: 25px; } ;
+     }
+     &__sub {
+         font-size: 14px;
+         color: #ad9797;
+     }
+  }
+  
+  .testimonial{
+  
+      &-heading{
+       text-align: center;
+      }
+  
+      &-header {
+        font-weight: bold;
+        font-size: 30px;
+        color:#BD161C;
+
+        @include respond(phone){ font-size: 25px; } ;
+        @include respond(tablet){ font-size: 25px; } ;
+    }
+  
+      &-sub {
+          font-size: 18px;
+         color: #ad9797;
+      }
+      &-details{
+          font-size: 16px;
+         
+      }
+  }
+  
+  .form-statement-div {
+      text-align: center;
+      display: block; 
+      margin-top: 30px;
+  }
+  .form-statement {
+     
+      font-size: 12px;
+      color: rgb(139, 139, 139);
+  }
+  
+  .side-bar-heading{
+      margin-bottom: 20px;
+  
+      .side-bar-header{
+       font-size: 18px;
+       font-weight: bold;
+       color: #313131;
+      }
+      .side-bar-sub{
+          font-size: 15px;
+          font-weight: 500;
+          color: #ADB0B4;
+          width: 95%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+      }
+  }
+  
+  .side-bar-link{
+      font-weight: 600;
+      color: #ADB0B4;
+  }
+  
+  .nav-header {
+      font-weight: 500;
+      color: #ADB0B4;
+      font-size:17px;
+  }
+  
+  .nav-date {
+      font-weight: 500;
+      color: #ADB0B4;
+      font-size:15px !important;
+  }
+  
+  .cart-header {
+      color: rgb(37, 37, 37);
+      font-size: 30px;
+
+      @include respond(phone){ font-size: 25px;} ;
+      @include respond(tablet){ font-size: 25px; } ;
+  }
+  .cart-product-header{
+     font-size: 18px;
+     font-weight: 600;
+     color: rgb(48, 48, 48);
+
+     @include respond(phone){ font-size: 14px;} ;
+      @include respond(tablet){ font-size: 14px; } ;
+  }
+  
+  .cart-product-price{
+      font-size: 16px;
+      font-weight: 400;
+      color: rgb(48, 48, 48);
+  }
+  
+  .instant-text{
+         color: #BD161C;
+  }
+
+  .app-modal {
+    background-color: rgb(238, 255, 0);
+    color: white;
+}
+
+.escrow-header{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.escrow-sub{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.escrow-listing{
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+.simple-product-sub-header{
+    font-size: 25px;
+
+    @include respond(phone){ font-size: 20px;} ;
+    @include respond(tablet){ font-size: 20px; } ;
+}

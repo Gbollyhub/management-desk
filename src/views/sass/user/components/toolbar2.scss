@@ -1,0 +1,51 @@
+.Omni-toolbar2{
+    padding: 0 50px;
+    position: fixed;
+    z-index: 20;
+    width:100%;
+    box-shadow:   0 7px 12px -8px rgba(0, 0, 0, 0.08) !important;
+    .brand-logo2{
+        width: 47px;
+        margin-right: 50px;
+    }
+
+    &__links{
+    &:link,
+    &:visited {
+        text-decoration: none;
+    }
+}
+}
+
+.user-info2{
+    margin-left:20px;
+    margin-right:20px;
+    // color: #836060;
+}
+
+.nav-dropdown-li{
+
+    transition: all .2s ease;
+}
+.nav-dropdown-li:hover{
+    background-color: rgba(66, 47, 47, 0.04);
+}
+.nav-dropdown-text{
+    color:#836060;
+}
+
+.nav-dropdown-text:hover{
+    color:#a82929;
+    transition: all .2s ease;
+}
+
+.country-dropdown2{
+    background-color: white;
+    padding: 20px;
+    position: fixed;
+    top: 64px;
+    right: 0;
+    z-index: 50;
+    border: 1px solid #836060 ;
+    width: 50%;
+}

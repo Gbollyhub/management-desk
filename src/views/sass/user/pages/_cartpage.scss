@@ -1,0 +1,6 @@
+.cart-section{
+    padding: 80px 100px;
+
+    @include respond(phone){ padding: 80px 20px;} ;
+    @include respond(tablet){ padding: 80px 20px; } ;
+}
